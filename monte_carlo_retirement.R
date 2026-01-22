@@ -53,7 +53,7 @@ simulate_death_age <- function(start_age, lt, max_age) {
   sample(ages, size =1, prob = qx)
 }
 
-# 3b. Generage lognormal returns
+# 3b. Generate lognormal returns
 generate_returns <- function(n, mu, sigma) {
   exp((mu-0.5*sigma^2) + sigma * rnorm(n))
 }
